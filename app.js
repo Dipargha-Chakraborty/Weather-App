@@ -31,12 +31,24 @@ async function changeWeather() {
 
   if (data.weather[0].main === "Clear") {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Clear_Day_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Clear_Night_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
   if (
@@ -46,12 +58,24 @@ async function changeWeather() {
     data.weather[0].description === "broken clouds"
   ) {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Cloudy_Day_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Cloudy_Night_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
   if (
@@ -63,27 +87,53 @@ async function changeWeather() {
       data.weather[0].description === "very light rain")
   ) {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Light_Rain_Day_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Light_Rain_Night_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
   if (
     data.weather[0].main === "Rain" &&
     (data.weather[0].description === "thunderstorm" ||
       data.weather[0].description === "heavy rain" ||
-      data.weather[0].description === "very heavy rain")
+      data.weather[0].description === "very heavy rain" ||
+      data.weather[0].description === "extreme rain" ||
+      data.weather[0].description === "heavy intensity rain")
   ) {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Thunderstorm_Day_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Thunderstorm_Night_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
   if (
@@ -91,12 +141,24 @@ async function changeWeather() {
     data.weather[0].description === "snow"
   ) {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/SnowFall_Day_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/SnowFall_Night_Sky.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
   if (
@@ -104,12 +166,24 @@ async function changeWeather() {
     data.weather[0].description === "mist"
   ) {
     if (data.weather[0].icon.includes("d")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Mist_Day.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
     if (data.weather[0].icon.includes("n")) {
+      if (bgVideo.classList.contains("video-visibility-show")) {
+        bgVideo.classList.remove("video-visibility-show");
+      }
       source.setAttribute("src", "Assets/Mist_Night.mp4");
-      bgVideo.load();
+      setTimeout(() => {
+        bgVideo.classList.add("video-visibility-show");
+        bgVideo.load();
+      }, 500);
     }
   }
 
